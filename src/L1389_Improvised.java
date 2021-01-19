@@ -22,7 +22,6 @@ public class L1389_Improvised {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 4, 0};
         int[] index = {0, 1, 2, 3, 0};
-
         L1389_Improvised obj = new L1389_Improvised();
         int[] arr = obj.createTargetArray(nums, index);
         for (int i : arr)
