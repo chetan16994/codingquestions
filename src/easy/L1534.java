@@ -1,3 +1,5 @@
+package easy;
+
 public class L1534 {
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
         int count=0;

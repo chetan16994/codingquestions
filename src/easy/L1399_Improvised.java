@@ -1,3 +1,5 @@
+package easy;
+
 public class L1399_Improvised {
     public int countLargestGroup(int n){
         int ans=0;

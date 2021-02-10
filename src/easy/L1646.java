@@ -1,3 +1,5 @@
+package easy;
+
 public class L1646 {
     public int getMaximumGenerated(int n){
         if( n <= 0){

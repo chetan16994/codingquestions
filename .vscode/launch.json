@@ -1,0 +1,126 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1",
+            "request": "launch",
+            "mainClass": "L1",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1389",
+            "request": "launch",
+            "mainClass": "L1389",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1389_Improvised",
+            "request": "launch",
+            "mainClass": "L1389_Improvised",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1399",
+            "request": "launch",
+            "mainClass": "L1399",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1399_Improvised",
+            "request": "launch",
+            "mainClass": "L1399_Improvised",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1431",
+            "request": "launch",
+            "mainClass": "L1431",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1470",
+            "request": "launch",
+            "mainClass": "L1470",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1480",
+            "request": "launch",
+            "mainClass": "L1480",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1534",
+            "request": "launch",
+            "mainClass": "L1534",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1588",
+            "request": "launch",
+            "mainClass": "L1588",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1646",
+            "request": "launch",
+            "mainClass": "L1646",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1672",
+            "request": "launch",
+            "mainClass": "L1672",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L1701",
+            "request": "launch",
+            "mainClass": "L1701",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L263",
+            "request": "launch",
+            "mainClass": "L263",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L922",
+            "request": "launch",
+            "mainClass": "L922",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
+            "name": "Launch L922_Improvised",
+            "request": "launch",
+            "mainClass": "L922_Improvised",
+            "projectName": "LeetCode2_7dc41a27"
+        }
+    ]
+}

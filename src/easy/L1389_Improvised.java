@@ -1,3 +1,5 @@
+package easy;
+
 import java.util.Arrays;
 
 public class L1389_Improvised {

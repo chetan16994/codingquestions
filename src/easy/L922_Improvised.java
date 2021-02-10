@@ -1,3 +1,5 @@
+package easy;
+
 public class L922_Improvised {
     public int[] sortArrayByParityII(int[] arr) {
         int[] newArr=new int[arr.length];

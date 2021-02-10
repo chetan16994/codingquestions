@@ -1,3 +1,5 @@
+package easy;
+
 public class L1588 {
     public static void main(String[] args) {
         int[] arr = {1, 4, 2, 5, 3};

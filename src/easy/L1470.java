@@ -1,4 +1,4 @@
-// find mid
+package easy;// find mid
 // start shuffle in new array
 
 public class L1470 {

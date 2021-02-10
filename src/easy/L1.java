@@ -1,3 +1,5 @@
+package easy;
+
 public class L1 {
     public int[] twoSum(int[] nums, int target) {
         int [] res=new int[2];

@@ -1,3 +1,5 @@
+package easy;
+
 public class L1480 {
     public int[] runningSum(int[] arr) {
 

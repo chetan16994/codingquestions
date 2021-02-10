@@ -1,3 +1,5 @@
+package easy;
+
 public class L1672 {
     public int maximumWealth(int[][] arr) {
         int maxSum=0;
