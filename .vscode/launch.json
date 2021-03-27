@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SumOfPair",
+            "request": "launch",
+            "mainClass": "SumOfPair",
+            "projectName": "LeetCode2_7dc41a27"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
