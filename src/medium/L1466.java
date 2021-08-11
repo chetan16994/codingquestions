@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Set;
 
 public class L1466 {
+    int counter=0;
     public int minReorder(int n, int[][] connections) {
         ArrayList<Integer> [] graph=new ArrayList[n];
         ArrayList<Integer> [] graphUndirected=new ArrayList[n];
@@ -40,21 +41,21 @@ public class L1466 {
             System.out.println();
         }
 
-        int counter=0;
+//        int counter=0;
         int[] visited= new int[n];
 
-         dfs(0,visited,counter,graph,graphUndirected);
+         dfs(0,visited,graph,graphUndirected);
         System.out.println("counter : "+counter);
         return counter;
     }
-    public void dfs(int curr, int[] visited,int counter, ArrayList<Integer>[] graph,ArrayList<Integer>[] graphUndirected){
+    public void dfs(int curr, int[] visited, ArrayList<Integer>[] graph,ArrayList<Integer>[] graphUndirected){
         visited[curr]=1;
         for (int i = 0; i < graphUndirected[curr].size(); i++) {
             int child=graphUndirected[curr].get(i);
             if (visited[child]==0){
                 if (!graph[child].contains(curr))
                     counter++;
-                dfs(graphUndirected[curr].get(i), visited, counter,graph,graphUndirected);
+                dfs(graphUndirected[curr].get(i), visited,graph,graphUndirected);
             }
         }
     }
