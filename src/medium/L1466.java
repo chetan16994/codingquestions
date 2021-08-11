@@ -43,11 +43,11 @@ public class L1466 {
         int counter=0;
         int[] visited= new int[n];
 
-        return dfs(0,visited,counter,graph,graphUndirected);
-//        System.out.println("counter : "+counter);
-//        return counter;
+         dfs(0,visited,counter,graph,graphUndirected);
+        System.out.println("counter : "+counter);
+        return counter;
     }
-    public int dfs(int curr, int[] visited,int counter, ArrayList<Integer>[] graph,ArrayList<Integer>[] graphUndirected){
+    public void dfs(int curr, int[] visited,int counter, ArrayList<Integer>[] graph,ArrayList<Integer>[] graphUndirected){
         visited[curr]=1;
         for (int i = 0; i < graphUndirected[curr].size(); i++) {
             int child=graphUndirected[curr].get(i);
@@ -57,7 +57,6 @@ public class L1466 {
                 dfs(graphUndirected[curr].get(i), visited, counter,graph,graphUndirected);
             }
         }
-        return counter;
     }
 
     public static void main(String[] args) {
