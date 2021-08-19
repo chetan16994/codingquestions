@@ -1,19 +1,17 @@
 package medium;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class L1466 {
-    int counter=0;
+
     public int minReorder(int n, int[][] connections) {
         ArrayList<Integer> [] graph=new ArrayList[n];
         ArrayList<Integer> [] graphUndirected=new ArrayList[n];
 
         for (int i = 0; i < n; i++) {
             graphUndirected[i]=new ArrayList<>();
-        }
-
-        for (int i = 0; i < n; i++) {
             graph[i]=new ArrayList<>();
         }
 
@@ -23,41 +21,23 @@ public class L1466 {
             graphUndirected[connections[i][0]].add(connections[i][1]);
             graphUndirected[connections[i][1]].add(connections[i][0]);
         }
-        System.out.println(" directed");
-        for (int i = 0; i < graph.length; i++) {
-            System.out.print(i+" : ");
-            for (int j = 0; j < graph[i].size(); j++) {
-                System.out.print(graph[i].get(j)+" ");
-            }
-            System.out.println();
-        }
 
-        System.out.println("un directed");
-        for (int i = 0; i < graphUndirected.length; i++) {
-            System.out.print(i+" : ");
-            for (int j = 0; j < graphUndirected[i].size(); j++) {
-                System.out.print(graphUndirected[i].get(j)+" ");
-            }
-            System.out.println();
-        }
+        boolean[] visited= new boolean[n];
 
-//        int counter=0;
-        int[] visited= new int[n];
-
-         dfs(0,visited,graph,graphUndirected);
-        System.out.println("counter : "+counter);
-        return counter;
+        return  dfs(0,visited,graph,graphUndirected);
     }
-    public void dfs(int curr, int[] visited, ArrayList<Integer>[] graph,ArrayList<Integer>[] graphUndirected){
-        visited[curr]=1;
+    public int dfs(int curr,  boolean[] visited, ArrayList<Integer>[] graph,ArrayList<Integer>[] graphUndirected){
+        int counter=0;
+        visited[curr]=true;
         for (int i = 0; i < graphUndirected[curr].size(); i++) {
-            int child=graphUndirected[curr].get(i);
-            if (visited[child]==0){
-                if (!graph[child].contains(curr))
+            // int child=graphUndirected[curr].get(i);
+            if (!visited[graphUndirected[curr].get(i)]){
+                if (!graph[graphUndirected[curr].get(i)].contains(curr))
                     counter++;
-                dfs(graphUndirected[curr].get(i), visited,graph,graphUndirected);
+                counter+= dfs(graphUndirected[curr].get(i), visited,graph,graphUndirected);
             }
         }
+        return counter;
     }
 
     public static void main(String[] args) {

@@ -1,1 +1,8 @@
 make 496 more better
+
+graph:
+
+743
+1042
+1129
+1334

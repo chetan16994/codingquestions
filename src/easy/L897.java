@@ -45,30 +45,23 @@ public class L897 {
         }
     }
 
-    static Queue<Integer> q=new LinkedList<Integer>();
-    static Stack<Integer> st=new Stack<Integer>();
+    TreeNode cur = new TreeNode(0);
+    TreeNode res = cur;
 
-    public TreeNode increasingBST(TreeNode root) {
-
-        if (root==null)
-            return root;
-        inorder(root);
-        TreeNode newRoot=new TreeNode(st.pop());
-
-        while (!st.isEmpty()){
-//            insert(newRoot,q.poll());
-             newRoot=new TreeNode(st.pop(),null,newRoot);
-
-        }
-        return newRoot;
+    public void inorder(TreeNode node){
+        if(node == null)return;
+        inorder(node.left);
+//        cur.left = null;
+//        cur.right = node;
+//        cur = node;
+        System.out.println(node.val);
+        inorder(node.right);
     }
 
-    public static void inorder(TreeNode root){
-        if (root!=null) {
-            inorder(root.left);
-            st.push(root.val);
-            inorder(root.right);
-        }
+    public TreeNode increasingBST(TreeNode root) {
+        inorder(root);
+        cur.left = cur.right = null;
+        return res.right;
     }
     public static void main(String[] args) {
         L897 obj= new L897();
@@ -82,10 +75,7 @@ public class L897 {
         insert(root,7);
         insert(root,9);
 
-        obj.BFS(root);
-        System.out.println("======");
-        obj.increasingBST(root);
-        obj.BFS(root);
+        obj.BFS(obj.increasingBST(root));
 
     }
 }
