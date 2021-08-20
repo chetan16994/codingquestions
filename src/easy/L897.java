@@ -33,8 +33,8 @@ public class L897 {
         Queue<TreeNode> q=new LinkedList<TreeNode>();
         q.add(root);
 
-        while (!q.isEmpty()){
 
+        while (!q.isEmpty()){
             TreeNode tempNode=q.poll();
             System.out.println(tempNode.val);
 
@@ -51,10 +51,9 @@ public class L897 {
     public void inorder(TreeNode node){
         if(node == null)return;
         inorder(node.left);
-//        cur.left = null;
-//        cur.right = node;
-//        cur = node;
-        System.out.println(node.val);
+        cur.left = null;
+        cur.right = node;
+        cur = node;
         inorder(node.right);
     }
 
@@ -75,7 +74,8 @@ public class L897 {
         insert(root,7);
         insert(root,9);
 
-        obj.BFS(obj.increasingBST(root));
+        obj.BFS(root);
+//        obj.BFS(obj.increasingBST(root));
 
     }
 }
