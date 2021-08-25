@@ -1,8 +1,6 @@
 package medium;
 
-import java.util.Collections;
-
-public class L1308Improvised {
+public class L1038Improvised {
     int sum=0;
     public TreeNode bstToGst(TreeNode root){
         if (root==null)
@@ -35,7 +33,7 @@ public class L1308Improvised {
 
 //        tree.BFS(root);
 
-        L1308Improvised obj=new L1308Improvised();
+        L1038Improvised obj=new L1038Improvised();
         tree.BFS(obj.bstToGst(root));
     }
 }
